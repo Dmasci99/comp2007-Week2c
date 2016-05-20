@@ -14,23 +14,30 @@ namespace Week2c
             ChangeActivePageLink();
         }
 
+        /**
+         * Determine which page is active and give the navbar link 
+         * it's appropriate CSS Class.
+         * 
+         * @ChangeActivePageLink
+         */
         protected void ChangeActivePageLink()
         {
             switch (Page.Title)
             {
-                case "HomePage": HomePage.Attributes.Add("class", "active");
+                case "HomePage":
+                    HomePage.Attributes.Add("class", "active");
                     break;
                 case "AboutPage":
-                    HomePage.Attributes.Add("class", "active");
+                    AboutPage.Attributes.Add("class", "active");
                     break;
                 case "ProductsPage":
-                    HomePage.Attributes.Add("class", "active");
+                    ProductsPage.Attributes.Add("class", "active");
                     break;
                 case "ServicesPage":
-                    HomePage.Attributes.Add("class", "active");
+                    ServicesPage.Attributes.Add("class", "active");
                     break;
                 case "ContactPage":
-                    HomePage.Attributes.Add("class", "active");
+                    ContactPage.Attributes.Add("class", "active");
                     break;
             }
         }

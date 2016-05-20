@@ -16,36 +16,35 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
-    
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Brand</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li id="HomePage" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li id="AboutPage" runat="server"><a href="About.aspx"><i class="fa fa-info fa-lg"></i> About Us</a></li>
-                    <li id="ProductsPage" runat="server"><a href="Products.aspx"><i class="fa fa-th fa-lg"></i> Products</a></li>
-                    <li id="ServicesPage" runat="server"><a href="Services.aspx"><i class="fa fa-gear fa-lg"></i> Services</a></li>
-                    <li id="ContactPage" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>                                        
-                </ul>                 
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+<body>   
 
     <form id="form1" runat="server">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="HomePage" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li id="AboutPage" runat="server"><a href="About.aspx"><i class="fa fa-info fa-lg"></i> About Us</a></li>
+                        <li id="ProductsPage" runat="server"><a href="Products.aspx"><i class="fa fa-th fa-lg"></i> Products</a></li>
+                        <li id="ServicesPage" runat="server"><a href="Services.aspx"><i class="fa fa-gear fa-lg"></i> Services</a></li>
+                        <li id="ContactPage" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>                                        
+                    </ul>                 
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
         <div>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
         
